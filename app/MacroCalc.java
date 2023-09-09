@@ -1,16 +1,17 @@
 package app;
 
 public class MacroCalc {
-    double weight;
+    float weight;
     private double proteinIntake;
 
     public MacroCalc() {
-        weight = 0.0;
+        weight = 0;
+        proteinIntake = 0;
     }
      
-    public double proteinIn(double weight) {
+    public double proteinIn(float weight) {
         MacroCalc body = new MacroCalc();
-        proteinIntake = body.weight * 1.2;
-        return proteinIntake;
+        body.proteinIntake = weight * 1.2;
+        return body.proteinIntake;
     }
 }
