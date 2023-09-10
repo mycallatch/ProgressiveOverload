@@ -5,6 +5,7 @@ public class MacroCalc {
     float calories;
     float height;
     float age;
+    String sex;
     private double fatIntake;
     private double carbIntake;
     private double proteinIntake;
@@ -14,15 +15,22 @@ public class MacroCalc {
         weight = 0;
         height = 0;
         age = 0;
+        sex = "";
         calories = 0;
         caloricIntake = 0;
         proteinIntake = 0;
         caloricIntake = 0;
     }
      
-    public double caloriesIn(float weight, float height, float age) {
+    public double caloriesIn(float weight, float height, float age, String sex) {
         MacroCalc body = new MacroCalc();
-        body.caloricIntake = 10 * weight + 6.25 * height - 5 * age + 5;
+        if (sex.equals("m")) {
+            body.caloricIntake = 10 * weight + 6.25 * height - 5 * age + 5;
+        } else if (sex.equals("f")) {
+            body.caloricIntake = 10 * weight + 6.25 * height - 5 * age - 161;
+        } else {
+            System.out.print("Error: please choose m or f");
+        }
         //body.caloricIntake =  88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
         return body.caloricIntake;
     }

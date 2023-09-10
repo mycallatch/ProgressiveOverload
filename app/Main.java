@@ -13,17 +13,24 @@ public class Main {
         Scanner user = new Scanner(System.in);
         System.out.println("How heavy are you in kg? ");
         String weight = user.nextLine();
+        System.out.println(weight);
         weightInt = Integer.parseInt(weight);
+
         System.out.println("How tall are you in cm? ");
         String height = user.nextLine();
         heightInt = Integer.parseInt(height);
+
         System.out.println("How old are you in years? ");
         String age = user.nextLine();
         ageInt = Integer.parseInt(age);
+
+        System.out.println("Were you born male or female? ");
+        String sex = user.nextLine();
+
         MacroCalc protein = new MacroCalc();
         proteinIntake = protein.proteinIn(weightInt);
         MacroCalc calories = new MacroCalc();
-        caloricIntake = calories.caloriesIn(weightInt, heightInt, ageInt);
+        caloricIntake = calories.caloriesIn(weightInt, heightInt, ageInt, sex);
 
         System.out.println("You should have " + caloricIntake + " calories per day at rest.");
         System.out.println("You should have at least " + proteinIntake + "g of protein per day.");
