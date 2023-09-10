@@ -20,7 +20,7 @@ public class MacroCalc {
         caloricIntake = 0;
     }
      
-    public double caloriesIn(float calories) {
+    public double caloriesIn(float weight, float height, float age) {
         MacroCalc body = new MacroCalc();
         body.caloricIntake =  88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
         return body.caloricIntake;
