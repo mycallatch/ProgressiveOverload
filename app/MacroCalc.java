@@ -5,6 +5,7 @@ public class MacroCalc {
     float calories;
     float height;
     float age;
+    private double fatIntake;
     private double carbIntake;
     private double proteinIntake;
     private double caloricIntake;
@@ -35,5 +36,11 @@ public class MacroCalc {
         MacroCalc body = new MacroCalc();
         body.carbIntake = (caloricIntake * 0.5) / 4;
         return carbIntake;
+    }
+
+    public double fatIn( double caloricIntake) {
+         MacroCalc body = new MacroCalc();
+        body.fatIntake = (caloricIntake * 0.3) / 9;
+        return fatIntake;
     }
 }
