@@ -1,2 +1,2 @@
 # ProgressiveOverload
-A workout app.
+A workout app that uses Java for backend.
