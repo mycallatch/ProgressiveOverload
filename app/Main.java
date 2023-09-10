@@ -5,6 +5,7 @@ public class Main {
 
     private static double proteinIntake;
     private static double caloricIntake;
+    private static double carbIntake;
     private static float weightInt;
     private static float heightInt;
     private static float ageInt;
@@ -13,7 +14,6 @@ public class Main {
         Scanner user = new Scanner(System.in);
         System.out.println("How heavy are you in kg? ");
         String weight = user.nextLine();
-        System.out.println(weight);
         weightInt = Integer.parseInt(weight);
 
         System.out.println("How tall are you in cm? ");
@@ -31,9 +31,12 @@ public class Main {
         proteinIntake = protein.proteinIn(weightInt);
         MacroCalc calories = new MacroCalc();
         caloricIntake = calories.caloriesIn(weightInt, heightInt, ageInt, sex);
+        MacroCalc carbohydrates = new MacroCalc();
+        carbIntake = carbohydrates.carbsIn(caloricIntake);
 
         System.out.println("You should have " + caloricIntake + " calories per day at rest.");
         System.out.println("You should have at least " + proteinIntake + "g of protein per day.");
+        System.out.println("You should have at least " + carbIntake + "g of carbs per day");
     }
 }
 

@@ -44,12 +44,12 @@ public class MacroCalc {
     public double carbsIn(double caloricIntake) {
         MacroCalc body = new MacroCalc();
         body.carbIntake = (caloricIntake * 0.5) / 4;
-        return carbIntake;
+        return body.carbIntake;
     }
 
     public double fatIn( double caloricIntake) {
          MacroCalc body = new MacroCalc();
         body.fatIntake = (caloricIntake * 0.3) / 9;
-        return fatIntake;
+        return body.fatIntake;
     }
 }
