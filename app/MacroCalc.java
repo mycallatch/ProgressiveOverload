@@ -35,7 +35,7 @@ public class MacroCalc {
         } else {
             System.out.print("Error: please choose m or f");
         }
-        return body.caloricIntake;
+        return Math.round(body.caloricIntake);
     }
 
     //Uses the user's weight to calculate protein intake in grams.
@@ -54,7 +54,7 @@ public class MacroCalc {
             System.out.println("Please select an option from r/b/c");
         }
         System.out.println(proteinIntake);
-        return body.proteinIntake;
+        return Math.round(body.proteinIntake);
     }
 
     //Uses user's caloric intake to calculate ideal carb intake in g.
@@ -62,7 +62,7 @@ public class MacroCalc {
     public double carbsIn(double caloricIntake) {
         MacroCalc body = new MacroCalc();
         body.carbIntake = (caloricIntake * 0.5) / 4;
-        return body.carbIntake;
+        return Math.round(body.carbIntake);
     }
 
     //Uses user's caloric intake to calculate ideal fat intake in g.
@@ -70,6 +70,6 @@ public class MacroCalc {
     public double fatsIn( double caloricIntake) {
          MacroCalc body = new MacroCalc();
         body.fatIntake = (caloricIntake * 0.3) / 9;
-        return body.fatIntake;
+        return Math.round(body.fatIntake);
     }
 }
