@@ -41,7 +41,7 @@ public class MacroCalc {
     }
 
     //Uses the user's BMR to calculate thier daily caloric burn based on activity levels.
-    public double caloriesIn(float weight, float height, float age, String sex, String activityLevel) {
+    public double caloriesIn(float weight, float height, float age, String sex, String activityLevel, String goal) {
         MacroCalc body = new MacroCalc();
         if (activityLevel.equals("1")) {
             body.caloricIntake = BMR(weight, height, age, sex) * 1.2;
@@ -55,26 +55,33 @@ public class MacroCalc {
             body.caloricIntake = BMR(weight, height, age, sex) * 1.9;
         } else if (activityLevel.equals("0")) {
             body.caloricIntake = BMR(weight, height, age, sex);
+        } else {
+            System.out.println("Please select an option from 1-5 ");
         }
+
+        //Alters caloric intake if the user is cutting or bulking.
+        if (goal.equals("b")) {
+            body.caloricIntake += 500; 
+        } else if (goal.equals("c")) {
+            body.caloricIntake -= 500;
+        }
+
         return Math.round(body.caloricIntake);
     }
+        
 
     //Uses the user's weight to calculate protein intake in grams.
     public double proteinIn(float weight, String goal) {
         MacroCalc body = new MacroCalc();
         if (goal.equals("r")) {
             body.proteinIntake = weight * 1.6;
-            System.out.println(proteinIntake);
         } else if (goal.equals("b")) {
             body.proteinIntake = weight * 1.6;
-            System.out.println(proteinIntake);
         } else if (goal.equals("c")) {
             body.proteinIntake = weight * 1.8;
-            System.out.println(proteinIntake);
         } else {
             System.out.println("Please select an option from r/b/c");
         }
-        System.out.println(proteinIntake);
         return Math.round(body.proteinIntake);
     }
 

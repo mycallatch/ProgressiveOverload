@@ -37,7 +37,7 @@ public class Main {
         MacroCalc protein = new MacroCalc();
         proteinIntake = protein.proteinIn(weightInt, goal);
         MacroCalc calories = new MacroCalc();
-        caloricIntake = calories.caloriesIn(weightInt, heightInt, ageInt, sex, activityLevel);
+        caloricIntake = calories.caloriesIn(weightInt, heightInt, ageInt, sex, activityLevel, goal);
         MacroCalc carbohydrates = new MacroCalc();
         carbIntake = carbohydrates.carbsIn(caloricIntake);
         MacroCalc fats = new MacroCalc();
