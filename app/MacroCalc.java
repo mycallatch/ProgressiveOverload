@@ -7,10 +7,12 @@ public class MacroCalc {
     float age;
     String sex;
     String goal;
+    String activityLevel;
     private double fatIntake;
     private double carbIntake;
     private double proteinIntake;
     private double caloricIntake;
+    private double BMR;
 
     //Constructor
     public MacroCalc() {
@@ -25,15 +27,34 @@ public class MacroCalc {
         caloricIntake = 0;
     }
      
-    //Takes height, weight, age and gender to calculate user's caloric burn
-    public double caloriesIn(float weight, float height, float age, String sex) {
+    //Takes height, weight, age and gender to calculate user's Base Metabolic Rate or BMR.
+    public double BMR(float weight, float height, float age, String sex) {
         MacroCalc body = new MacroCalc();
         if (sex.equals("m")) {
-            body.caloricIntake = 10 * weight + 6.25 * height - 5 * age + 5;
+            body.BMR = 10 * weight + 6.25 * height - 5 * age + 5;
         } else if (sex.equals("f")) {
-            body.caloricIntake = 10 * weight + 6.25 * height - 5 * age - 161;
+            body.BMR = 10 * weight + 6.25 * height - 5 * age - 161;
         } else {
             System.out.print("Error: please choose m or f");
+        }
+        return body.BMR;
+    }
+
+    //Uses the user's BMR to calculate thier daily caloric burn based on activity levels.
+    public double caloriesIn(float weight, float height, float age, String sex, String activityLevel) {
+        MacroCalc body = new MacroCalc();
+        if (activityLevel.equals("1")) {
+            body.caloricIntake = BMR(weight, height, age, sex) * 1.2;
+        } else if (activityLevel.equals("2")) {
+            body.caloricIntake = BMR(weight, height, age, sex) * 1.375;
+        } else if (activityLevel.equals("3")) {
+            body.caloricIntake = BMR(weight, height, age, sex) * 1.55;
+        } else if (activityLevel.equals("4")) {
+            body.caloricIntake = BMR(weight, height, age, sex) * 1.725;
+        } else if (activityLevel.equals("5")) {
+            body.caloricIntake = BMR(weight, height, age, sex) * 1.9;
+        } else if (activityLevel.equals("0")) {
+            body.caloricIntake = BMR(weight, height, age, sex);
         }
         return Math.round(body.caloricIntake);
     }

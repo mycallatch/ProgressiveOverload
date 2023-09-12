@@ -31,10 +31,13 @@ public class Main {
         System.out.println("Are you aiming to recompose, bulk or cut? (r/b/c) ");
         String goal = user.nextLine();
 
+        System.out.println("How active are you? (1-5) ");
+        String activityLevel = user.nextLine();
+
         MacroCalc protein = new MacroCalc();
         proteinIntake = protein.proteinIn(weightInt, goal);
         MacroCalc calories = new MacroCalc();
-        caloricIntake = calories.caloriesIn(weightInt, heightInt, ageInt, sex);
+        caloricIntake = calories.caloriesIn(weightInt, heightInt, ageInt, sex, activityLevel);
         MacroCalc carbohydrates = new MacroCalc();
         carbIntake = carbohydrates.carbsIn(caloricIntake);
         MacroCalc fats = new MacroCalc();
