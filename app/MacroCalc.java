@@ -6,6 +6,7 @@ public class MacroCalc {
     float height;
     float age;
     String sex;
+    String goal;
     private double fatIntake;
     private double carbIntake;
     private double proteinIntake;
@@ -17,6 +18,7 @@ public class MacroCalc {
         height = 0;
         age = 0;
         sex = "";
+        goal = "";
         calories = 0;
         caloricIntake = 0;
         proteinIntake = 0;
@@ -37,9 +39,21 @@ public class MacroCalc {
     }
 
     //Uses the user's weight to calculate protein intake in grams.
-    public double proteinIn(float weight) {
+    public double proteinIn(float weight, String goal) {
         MacroCalc body = new MacroCalc();
-        body.proteinIntake = weight * 1.2;
+        if (goal.equals("r")) {
+            body.proteinIntake = weight * 1.6;
+            System.out.println(proteinIntake);
+        } else if (goal.equals("b")) {
+            body.proteinIntake = weight * 1.6;
+            System.out.println(proteinIntake);
+        } else if (goal.equals("c")) {
+            body.proteinIntake = weight * 1.8;
+            System.out.println(proteinIntake);
+        } else {
+            System.out.println("Please select an option from r/b/c");
+        }
+        System.out.println(proteinIntake);
         return body.proteinIntake;
     }
 

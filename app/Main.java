@@ -25,11 +25,14 @@ public class Main {
         String age = user.nextLine();
         ageInt = Integer.parseInt(age);
 
-        System.out.println("Were you born male or female? ");
+        System.out.println("Were you born male or female? (m/f) ");
         String sex = user.nextLine();
 
+        System.out.println("Are you aiming to recompose, bulk or cut? (r/b/c) ");
+        String goal = user.nextLine();
+
         MacroCalc protein = new MacroCalc();
-        proteinIntake = protein.proteinIn(weightInt);
+        proteinIntake = protein.proteinIn(weightInt, goal);
         MacroCalc calories = new MacroCalc();
         caloricIntake = calories.caloriesIn(weightInt, heightInt, ageInt, sex);
         MacroCalc carbohydrates = new MacroCalc();
