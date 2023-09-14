@@ -31,3 +31,11 @@ INSERT INTO exercise VALUES(15, 'Incline Bench Press', 'chest', 'push', 'chest',
 INSERT INTO exercise VALUES(16, 'Dumbell Pullovers', 'chest', 'push', 'chest', 'Gym');
 INSERT INTO exercise VALUES(17, 'Pec Flyes', 'chest', 'push', 'chest', 'Gym');
 INSERT INTO exercise VALUES(18, 'Machine Press', 'chest', 'push', 'chest', 'Gym');
+
+-- Inserts for back workouts
+INSERT INTO exercise VALUES(19, 'Pull-Ups', 'back', 'pull', 'back', 'Home');
+INSERT INTO exercise VALUES(20, 'Barbell Rows', 'back', 'pull', 'back', 'Gym');
+INSERT INTO exercise VALUES(21, 'Cable Rows', 'back', 'pull', 'back', 'Gym');
+INSERT INTO exercise VALUES(22, 'Lat Pulldowns', 'back', 'pull', 'back', 'Gym');
+INSERT INTO exercise VALUES(23, 'Deadlifts', 'back', 'pull', 'back', 'Gym');
+INSERT INTO exercise VALUES(24, 'Lat Pulldowns', 'back', 'pull', 'back', 'Gym');
