@@ -58,3 +58,12 @@ INSERT INTO exercise VALUES(36, 'Russian Twists', 'abs', 'core', 'core', 'Home')
 INSERT INTO exercise VALUES(37, 'Crunches', 'abs', 'core', 'core', 'Home');
 INSERT INTO exercise VALUES(38, 'Plank', 'abs', 'core', 'core', 'Home');
 INSERT INTO exercise VALUES(39, 'V-Sit', 'abs', 'core', 'core', 'Home');
+
+-- Inserts for shoulder workouts
+INSERT INTO exercise VALUES(40, 'Shoulder Press', 'lateral delt', 'push', 'shoulders', 'Gym');
+INSERT INTO exercise VALUES(41, 'Lateral Raises', 'lateral delt', 'push', 'shoulders', 'Gym');
+INSERT INTO exercise VALUES(42, 'Rear Delt Flyes', 'posterior delt', 'pull', 'shoulders', 'Gym');
+INSERT INTO exercise VALUES(43, 'Front Raises', 'anterior delt', 'push', 'shoulders', 'Gym');
+INSERT INTO exercise VALUES(44, 'Military Press', 'anterior delt', 'push', 'shoulders', 'Gym');
+INSERT INTO exercise VALUES(45, 'Face Pulls', 'posterior delt', 'pull', 'shoulders', 'Gym');
+INSERT INTO exercise VALUES(40, 'Pike Push-Ups', 'lateral delt', 'push', 'shoulders', 'Gym');
