@@ -8,4 +8,9 @@ CREATE TABLE exercise (
 	PRIMARY KEY (exercise_id)
 );
 
-
+-- Inserts for bicep workouts
+INSERT INTO exercise VALUES(1, 'Dumbell Curls', 'biceps', 'pull', 'arms', 'Gym');
+INSERT INTO exercise VALUES(2, 'Preacher Curls', 'biceps', 'pull', 'arms', 'Gym');
+INSERT INTO exercise VALUES(3, 'Cable Curls', 'biceps', 'pull', 'arms', 'Gym');
+INSERT INTO exercise VALUES(4, 'Hammer Curls', 'biceps', 'pull', 'arms', 'Gym');
+INSERT INTO exercise VALUES(4, 'Barbell Curls', 'biceps', 'pull', 'arms', 'Gym');
