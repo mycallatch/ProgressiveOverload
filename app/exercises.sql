@@ -9,7 +9,7 @@ CREATE TABLE exercise (
 );
 
 -- Inserts for bicep workouts
-INSERT INTO exercise VALUES(1, 'Dumbell Curls', 'biceps', 'pull', 'arms', 'Gym');
+INSERT INTO exercise VALUES(1, 'Dumbbell Curls', 'biceps', 'pull', 'arms', 'Gym');
 INSERT INTO exercise VALUES(2, 'Preacher Curls', 'biceps', 'pull', 'arms', 'Gym');
 INSERT INTO exercise VALUES(3, 'Cable Curls', 'biceps', 'pull', 'arms', 'Gym');
 INSERT INTO exercise VALUES(4, 'Hammer Curls', 'biceps', 'pull', 'arms', 'Gym');
@@ -28,7 +28,7 @@ INSERT INTO exercise VALUES(12, 'Push-Ups', 'chest', 'push', 'chest', 'Home');
 INSERT INTO exercise VALUES(13, 'Dips', 'chest', 'push', 'chest', 'Home');
 INSERT INTO exercise VALUES(14, 'Bench Press', 'chest', 'push', 'chest', 'Gym');
 INSERT INTO exercise VALUES(15, 'Incline Bench Press', 'chest', 'push', 'chest', 'Gym');
-INSERT INTO exercise VALUES(16, 'Dumbell Pullovers', 'chest', 'push', 'chest', 'Gym');
+INSERT INTO exercise VALUES(16, 'Dumbbell Pullovers', 'chest', 'push', 'chest', 'Gym');
 INSERT INTO exercise VALUES(17, 'Pec Flyes', 'chest', 'push', 'chest', 'Gym');
 INSERT INTO exercise VALUES(18, 'Machine Press', 'chest', 'push', 'chest', 'Gym');
 
@@ -41,12 +41,20 @@ INSERT INTO exercise VALUES(23, 'Deadlifts', 'back', 'pull', 'back', 'Gym');
 INSERT INTO exercise VALUES(24, 'Lat Pulldowns', 'back', 'pull', 'back', 'Gym');
 
 -- Inserts for leg workouts
-
 INSERT INTO exercise VALUES(25, 'Squats', 'legs', 'legs', 'legs', 'Home');
 INSERT INTO exercise VALUES(26, 'Weighted Squats', 'legs', 'legs', 'legs', 'Gym');
 INSERT INTO exercise VALUES(27, 'Leg Press', 'legs', 'legs', 'legs', 'Home');
 INSERT INTO exercise VALUES(28, 'Glute Bridges', 'glutes', 'legs', 'legs', 'Home');
 INSERT INTO exercise VALUES(29, 'Weighted Calf Raises', 'calves', 'legs', 'legs', 'Gym');
-INSERT INTO exercise VALUES(30, 'Calf Raises', 'calves', 'legs', 'legs', 'Home');
-INSERT INTO exercise VALUES(31, 'Leg Extensions', 'quads', 'legs', 'legs', 'Home');
-INSERT INTO exercise VALUES(32, 'Leg Curls', 'hamstrings', 'legs', 'legs', 'Home');
+INSERT INTO exercise VALUES(30, 'Calf Raises', 'calves', 'legs', 'legs', 'Gym');
+INSERT INTO exercise VALUES(31, 'Leg Extensions', 'quads', 'legs', 'legs', 'Gym');
+INSERT INTO exercise VALUES(32, 'Leg Curls', 'hamstrings', 'legs', 'legs', 'Gym');
+
+-- Inserts for core workouts
+INSERT INTO exercise VALUES(33, 'Crunch Machine', 'abs', 'core', 'core', 'Gym');
+INSERT INTO exercise VALUES(34, 'Sit-Ups', 'abs', 'core', 'core', 'Home');
+INSERT INTO exercise VALUES(35, 'Leg Raises', 'abs', 'core', 'core', 'Home');
+INSERT INTO exercise VALUES(36, 'Russian Twists', 'abs', 'core', 'core', 'Home');
+INSERT INTO exercise VALUES(37, 'Crunches', 'abs', 'core', 'core', 'Home');
+INSERT INTO exercise VALUES(38, 'Plank', 'abs', 'core', 'core', 'Home');
+INSERT INTO exercise VALUES(39, 'V-Sit', 'abs', 'core', 'core', 'Home');
