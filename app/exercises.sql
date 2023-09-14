@@ -39,3 +39,14 @@ INSERT INTO exercise VALUES(21, 'Cable Rows', 'back', 'pull', 'back', 'Gym');
 INSERT INTO exercise VALUES(22, 'Lat Pulldowns', 'back', 'pull', 'back', 'Gym');
 INSERT INTO exercise VALUES(23, 'Deadlifts', 'back', 'pull', 'back', 'Gym');
 INSERT INTO exercise VALUES(24, 'Lat Pulldowns', 'back', 'pull', 'back', 'Gym');
+
+-- Inserts for leg workouts
+
+INSERT INTO exercise VALUES(25, 'Squats', 'legs', 'legs', 'legs', 'Home');
+INSERT INTO exercise VALUES(26, 'Weighted Squats', 'legs', 'legs', 'legs', 'Gym');
+INSERT INTO exercise VALUES(27, 'Leg Press', 'legs', 'legs', 'legs', 'Home');
+INSERT INTO exercise VALUES(28, 'Glute Bridges', 'glutes', 'legs', 'legs', 'Home');
+INSERT INTO exercise VALUES(29, 'Weighted Calf Raises', 'calves', 'legs', 'legs', 'Gym');
+INSERT INTO exercise VALUES(30, 'Calf Raises', 'calves', 'legs', 'legs', 'Home');
+INSERT INTO exercise VALUES(31, 'Leg Extensions', 'quads', 'legs', 'legs', 'Home');
+INSERT INTO exercise VALUES(32, 'Leg Curls', 'hamstrings', 'legs', 'legs', 'Home');
