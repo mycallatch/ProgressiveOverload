@@ -22,3 +22,12 @@ INSERT INTO exercise VALUES(8, 'Skull Crushers', 'triceps', 'push', 'arms', 'Gym
 INSERT INTO exercise VALUES(9, 'Tricep Dips', 'triceps', 'push', 'arms', 'Home');
 INSERT INTO exercise VALUES(10, 'Diamond Push-Ups', 'triceps', 'push', 'arms', 'Home');
 INSERT INTO exercise VALUES(11, 'Tricep Dumbell Kickbacks', 'triceps', 'push', 'arms', 'Gym');
+
+-- Inserts for chest workouts
+INSERT INTO exercise VALUES(12, 'Push-Ups', 'chest', 'push', 'chest', 'Home');
+INSERT INTO exercise VALUES(13, 'Dips', 'chest', 'push', 'chest', 'Home');
+INSERT INTO exercise VALUES(14, 'Bench Press', 'chest', 'push', 'chest', 'Gym');
+INSERT INTO exercise VALUES(15, 'Incline Bench Press', 'chest', 'push', 'chest', 'Gym');
+INSERT INTO exercise VALUES(16, 'Dumbell Pullovers', 'chest', 'push', 'chest', 'Gym');
+INSERT INTO exercise VALUES(17, 'Pec Flyes', 'chest', 'push', 'chest', 'Gym');
+INSERT INTO exercise VALUES(18, 'Machine Press', 'chest', 'push', 'chest', 'Gym');
