@@ -5,19 +5,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <title>Home</title>
+      <h1>Progressive Overload</h1>
+        <p>Everything you need to know for your fitness!</p>
+      <link rel = "stylesheet" href = "App.css"></link>
       </header>
+      <body className="App-body">
+        <h2>Macro Calculator</h2><br />
+        <p>By inputting your statistics we can calculate your approximate macronutrient <br /> needs</p>
+      </body>
     </div>
   );
 }
