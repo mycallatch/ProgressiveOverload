@@ -20,6 +20,11 @@ function App() {
           <input type = "number" id = "height" name = "height"></input><br></br><br></br>
           <label for = "age">Age(years):</label><br></br>
           <input type = "number" id = "age" name = "age"></input><br></br><br></br>
+          <label for = "sex">What were you born as?:</label><br></br>
+          <select>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+          </select><br></br><br></br>
         </form>
         
       </body>
