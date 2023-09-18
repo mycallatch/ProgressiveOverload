@@ -43,9 +43,9 @@ public class Main {
         MacroCalc fats = new MacroCalc();
         fatIntake = fats.fatsIn(caloricIntake);
 
-        System.out.println("You should have " + caloricIntake + " calories per day.");
+        System.out.println("You should have about " + caloricIntake + " calories per day.");
         System.out.println("You should have at least " + proteinIntake + "g of protein per day.");
-        System.out.println("You should have at least " + carbIntake + "g of carbs per day");
+        System.out.println("You should have around " + carbIntake + "g of carbs per day");
         System.out.println("You should have at least " + fatIntake + "g of fats per day");
     }
 }

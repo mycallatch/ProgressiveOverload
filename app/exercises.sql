@@ -66,4 +66,4 @@ INSERT INTO exercise VALUES(42, 'Rear Delt Flyes', 'posterior delt', 'pull', 'sh
 INSERT INTO exercise VALUES(43, 'Front Raises', 'anterior delt', 'push', 'shoulders', 'Gym');
 INSERT INTO exercise VALUES(44, 'Military Press', 'anterior delt', 'push', 'shoulders', 'Gym');
 INSERT INTO exercise VALUES(45, 'Face Pulls', 'posterior delt', 'pull', 'shoulders', 'Gym');
-INSERT INTO exercise VALUES(40, 'Pike Push-Ups', 'lateral delt', 'push', 'shoulders', 'Gym');
+INSERT INTO exercise VALUES(46, 'Pike Push-Ups', 'lateral delt', 'push', 'shoulders', 'Gym');
