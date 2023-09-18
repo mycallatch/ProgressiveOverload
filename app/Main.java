@@ -28,7 +28,7 @@ public class Main {
             System.out.println("Were you born male or female? (m/f) ");
             String sex = user.nextLine();
 
-            System.out.println("Are you aiming to recompose, bulk or cut? (r/b/c) ");
+            System.out.println("Are you aiming to maintain, bulk or cut? (m/b/c) ");
             String goal = user.nextLine();
 
             System.out.println("How active are you? (1-5) ");

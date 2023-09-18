@@ -25,6 +25,12 @@ function App() {
             <option value="m">Male</option>
             <option value="f">Female</option>
           </select><br></br><br></br>
+          <label for = "goal">What are your goals?:</label><br></br>
+          <select>
+            <option value="m">Maintain</option>
+            <option value="b">Bulk</option>
+            <option value="c">Cut</option>
+          </select><br></br><br></br>
         </form>
         
       </body>

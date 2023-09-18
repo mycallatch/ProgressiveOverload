@@ -73,14 +73,14 @@ public class MacroCalc {
     //Uses the user's weight to calculate protein intake in grams.
     public double proteinIn(float weight, String goal) {
         MacroCalc body = new MacroCalc();
-        if (goal.equals("r")) {
+        if (goal.equals("m")) {
             body.proteinIntake = weight * 1.6;
         } else if (goal.equals("b")) {
             body.proteinIntake = weight * 1.6;
         } else if (goal.equals("c")) {
             body.proteinIntake = weight * 1.8;
         } else {
-            System.out.println("Please select an option from r/b/c");
+            System.out.println("Please select an option from m/b/c");
         }
         return Math.round(body.proteinIntake);
     }
