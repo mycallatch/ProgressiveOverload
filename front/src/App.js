@@ -31,6 +31,15 @@ function App() {
             <option value="b">Bulk</option>
             <option value="c">Cut</option>
           </select><br></br><br></br>
+          <label for = "activity">How active are you on a scale of 1-5?:</label><br></br>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select><br></br>
+          <p></p>
         </form>
         
       </body>
