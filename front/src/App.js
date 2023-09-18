@@ -39,7 +39,11 @@ function App() {
             <option value="4">4</option>
             <option value="5">5</option>
           </select><br></br>
-          <p></p>
+          <p className="App-sub">1 - little to no exercise<br>
+          </br>2 - light exercise/sports 1-3 days/week<br>
+          </br>3 - moderate exercise/sports 3-5 days/week<br>
+          </br>4 - hard exercise/sports 6-7 days a week<br>
+          </br>5 - very hard exercise/sports & physical job or 2x training</p>
         </form>
         
       </body>
