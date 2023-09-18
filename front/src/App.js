@@ -14,11 +14,11 @@ function App() {
         <label><h2>Macro Calculator</h2></label>
         <p>By inputting your statistics we can calculate your approximate macronutrient <br /> needs</p><br></br>
         <form>
-          <label for = "weight">Weight(kg):</label><br></br>
+          <label for = "weight">How heavy are you? (kg):</label><br></br>
           <input type = "number" id = "weight" name = "weight"></input><br></br><br></br>
-          <label for = "height">Height(cm):</label><br></br>
+          <label for = "height">How tall are you? (cm):</label><br></br>
           <input type = "number" id = "height" name = "height"></input><br></br><br></br>
-          <label for = "age">Age(years):</label><br></br>
+          <label for = "age">How old are you? (years):</label><br></br>
           <input type = "number" id = "age" name = "age"></input><br></br><br></br>
           <label for = "sex">What were you born as?:</label><br></br>
           <select>
