@@ -6,13 +6,18 @@ function App() {
     <div className="App">
       <header className="App-header">
       <title>Home</title>
-      <h1>Progressive Overload</h1>
+      <label><h1>Progressive Overload</h1></label>
         <p>Everything you need to know for your fitness!</p>
       <link rel = "stylesheet" href = "App.css"></link>
       </header>
       <body className="App-body">
-        <h2>Macro Calculator</h2><br />
+        <label><h2>Macro Calculator</h2><br /></label>
         <p>By inputting your statistics we can calculate your approximate macronutrient <br /> needs</p>
+        <form>
+          <label for = "weight">Weight(kg):</label><br></br>
+          <input type = "number" id = "weight" name = "weight"></input>
+        </form>
+        
       </body>
     </div>
   );
