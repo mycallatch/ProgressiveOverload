@@ -1,6 +1,6 @@
-package app;
+package app.MacroCalc;
 
-public class MacroCalc {
+public class MacroCalculator {
     float weight;
     float calories;
     float height;
@@ -15,7 +15,7 @@ public class MacroCalc {
     private double BMR;
 
     //Constructor
-    public MacroCalc() {
+    public MacroCalculator() {
         weight = 0;
         height = 0;
         age = 0;

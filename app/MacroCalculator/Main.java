@@ -1,4 +1,4 @@
-package app;
+package app.MacroCalculator;
 import java.util.Scanner;
 
 public class Main {
