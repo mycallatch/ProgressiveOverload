@@ -1,4 +1,5 @@
-package app.MacroCalculator;
+package app.src.main.java.com.backend.MacroCalculator;
+
 import java.util.Scanner;
 
 public class Main {
@@ -52,4 +53,3 @@ public class Main {
         System.out.println("You should have at least " + fatIntake + "g of fats per day");
     }
 }
-

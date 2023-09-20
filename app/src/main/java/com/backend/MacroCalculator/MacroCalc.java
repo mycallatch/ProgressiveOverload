@@ -1,6 +1,6 @@
-package app.MacroCalc;
+package app.src.main.java.com.backend.MacroCalculator;
 
-public class MacroCalculator {
+public class MacroCalc {
     float weight;
     float calories;
     float height;
@@ -14,8 +14,8 @@ public class MacroCalculator {
     private double caloricIntake;
     private double BMR;
 
-    //Constructor
-    public MacroCalculator() {
+    // Constructor
+    public MacroCalc() {
         weight = 0;
         height = 0;
         age = 0;
@@ -26,8 +26,9 @@ public class MacroCalculator {
         proteinIntake = 0;
         caloricIntake = 0;
     }
-     
-    //Takes height, weight, age and gender to calculate user's Base Metabolic Rate or BMR.
+
+    // Takes height, weight, age and gender to calculate user's Base Metabolic Rate
+    // or BMR.
     public double BMR(float weight, float height, float age, String sex) {
         MacroCalc body = new MacroCalc();
         if (sex.equals("m")) {
@@ -40,7 +41,8 @@ public class MacroCalculator {
         return body.BMR;
     }
 
-    //Uses the user's BMR to calculate thier daily caloric burn based on activity levels.
+    // Uses the user's BMR to calculate thier daily caloric burn based on activity
+    // levels.
     public double caloriesIn(float weight, float height, float age, String sex, String activityLevel, String goal) {
         MacroCalc body = new MacroCalc();
         if (activityLevel.equals("1")) {
@@ -59,18 +61,17 @@ public class MacroCalculator {
             System.out.println("Please select an option from 1-5 ");
         }
 
-        //Alters caloric intake if the user is cutting or bulking.
+        // Alters caloric intake if the user is cutting or bulking.
         if (goal.equals("b")) {
-            body.caloricIntake += 500; 
+            body.caloricIntake += 500;
         } else if (goal.equals("c")) {
             body.caloricIntake -= 500;
         }
 
         return Math.round(body.caloricIntake);
     }
-        
 
-    //Uses the user's weight to calculate protein intake in grams.
+    // Uses the user's weight to calculate protein intake in grams.
     public double proteinIn(float weight, String goal) {
         MacroCalc body = new MacroCalc();
         if (goal.equals("m")) {
@@ -85,18 +86,20 @@ public class MacroCalculator {
         return Math.round(body.proteinIntake);
     }
 
-    //Uses user's caloric intake to calculate ideal carb intake in g.
-    //Half of the user's calories should come from carbs, 1g of carbs is made up of 4 calories.
+    // Uses user's caloric intake to calculate ideal carb intake in g.
+    // Half of the user's calories should come from carbs, 1g of carbs is made up of
+    // 4 calories.
     public double carbsIn(double caloricIntake) {
         MacroCalc body = new MacroCalc();
         body.carbIntake = (caloricIntake * 0.5) / 4;
         return Math.round(body.carbIntake);
     }
 
-    //Uses user's caloric intake to calculate ideal fat intake in g.
-    //30% of the user's calories should come from fats, 1g of fats is made up of 9 calories.
-    public double fatsIn( double caloricIntake) {
-         MacroCalc body = new MacroCalc();
+    // Uses user's caloric intake to calculate ideal fat intake in g.
+    // 30% of the user's calories should come from fats, 1g of fats is made up of 9
+    // calories.
+    public double fatsIn(double caloricIntake) {
+        MacroCalc body = new MacroCalc();
         body.fatIntake = (caloricIntake * 0.3) / 9;
         return Math.round(body.fatIntake);
     }
