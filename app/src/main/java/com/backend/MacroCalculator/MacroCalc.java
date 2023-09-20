@@ -1,4 +1,4 @@
-package app.src.main.java.com.backend.MacroCalculator;
+package com.backend.MacroCalculator;
 
 public class MacroCalc {
     float weight;
